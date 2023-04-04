@@ -1,0 +1,321 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+
+.video {
+  display: flex;
+  gap: 30px;
+  margin-left: 65px;
+}
+
+main {
+  margin-left: 0;
+}
+
+.video-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 960px;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.video-player {
+  width: 100%;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.video-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "YoutubeSansDarkSemiBold", sans-serif;
+  color: $white;
+}
+
+.row {
+  margin: 10px 0;
+}
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1px solid rgb(120, 120, 120);
+  padding-bottom: 15px;
+
+  .video-channel {
+    display: flex;
+    align-items: center;
+
+    .channel-avatar {
+      width: 40px;
+      height: 40px;
+      background-color: rgb(249, 172, 2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      border-radius: 50%;
+    }
+    .channel-details {
+      margin-left: 10px;
+    }
+    .channel-name {
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .channel-subscribers {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      color: $text-gray;
+    }
+
+    .subscribe-btn {
+      display: flex;
+      align-items: center;
+      border: none;
+      width: fit-content;
+      height: 36px;
+      padding: 0 15px;
+      color: #0f0f0f;
+      background-color: $white;
+      font-weight: 600;
+      border-radius: 30px;
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 36px;
+
+      svg {
+        font-size: 22px;
+        margin-right: 10px;
+      }
+    }
+
+    .subscribe-btn-active {
+      background-color: $light-gray;
+      color: $white;
+    }
+
+    .subscribe-btn:active {
+      svg {
+        animation: hithere 1s ease 1;
+      }
+    }
+  }
+
+  .video-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .reaction-btns {
+      display: flex;
+      align-items: center;
+      background-color: $dark-gray;
+      height: 36px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        gap: 5px;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          background-color: $light-gray;
+        }
+
+        svg {
+          font-size: 22px;
+        }
+      }
+      .like-btn {
+        padding-left: 15px;
+      }
+
+      .like-btn:active {
+        svg {
+          animation: hithere 1s ease 1;
+        }
+      }
+
+      @keyframes hithere {
+        30% {
+          transform: scale(1.4);
+        }
+        40%,
+        60% {
+          transform: rotate(-30deg) scale(1.4);
+        }
+        50% {
+          transform: rotate(30deg) scale(1.4);
+        }
+        70% {
+          transform: rotate(0deg) scale(1.4);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .dislike-btn {
+        padding-right: 15px;
+      }
+      .dislike-btn:active {
+        svg {
+          animation: hithere 1s ease 1;
+        }
+      }
+    }
+
+    .share-btn,
+    .add-to-playlist-btn {
+      border: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 36px;
+      gap: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      background-color: $dark-gray;
+      height: 36px;
+      border-radius: 20px;
+      padding: 0 15px;
+
+      svg {
+        font-size: 22px;
+      }
+    }
+
+    .add-to-playlist-btn svg {
+      font-size: 18px;
+    }
+  }
+
+  .share-btn:active {
+    animation: hithere 1s ease 1;
+  }
+}
+
+// Description
+
+.description-container {
+  background-color: $dark-gray;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  .description-inner {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    align-items: flex-start;
+
+    .row {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+      }
+
+      .video-date-posted::first-letter {
+        text-transform: capitalize;
+      }
+    }
+
+    .video-description {
+      flex-direction: column;
+
+      .description-content-wrapper {
+        height: 90px;
+        overflow: hidden;
+        margin-bottom: 5px;
+      }
+      .show-description {
+        height: fit-content !important;
+      }
+    }
+
+    p.description-content {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .toggle-more-btn {
+      background: transparent;
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Recommendation
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+
+  .video-card {
+    max-width: 400px;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    .video-thumbnail {
+      max-width: 168px;
+    }
+
+    .user-img {
+      display: none;
+    }
+
+    .video-title {
+      font-size: 16px;
+    }
+  }
+}

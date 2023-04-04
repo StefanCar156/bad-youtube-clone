@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+}
+
+.video-card-info {
+  display: flex;
+  margin-top: 10px;
+  color: rgb(120, 120, 120);
+  font-weight: 500;
+}
+
+.video-card-channel-img {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  border-radius: 50%;
+}
+
+.right {
+  margin-left: 15px;
+}
+
+.video-card-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.video-card-channel {
+  margin-top: 5px;
+}
+
+.bottom {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.recommendation-card {
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  .video-card-thumbnail {
+    width: 168px;
+  }
+  .video-card-info {
+    margin-top: 0;
+  }
+  .video-card-channel-img {
+    display: none;
+  }
+  .right {
+    margin-left: 10px;
+
+    .video-card-title {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      color: $white;
+    }
+
+    .video-card-channel,
+    .bottom {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      color: $text-gray;
+    }
+  }
+}

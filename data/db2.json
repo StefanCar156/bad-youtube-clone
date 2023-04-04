@@ -1,0 +1,182 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Video 1",
+      "channel": {
+        "channelId": 1,
+        "channelName": "Michael"
+      },
+      "src": "/videos/video-1.mp4",
+      "thumbnail": "/images/img-1.jpg",
+      "reaction": "like",
+      "date": "Feb 02 2021 18:42:04 GMT+0100 (Central European Standard Time)",
+      "description": "tristique lorem quis porttitor. Etiam vel velit sit amet nisi laoreet varius lacinia a metus. Ut rutrum nunc sit amet fermentum malesuada. Cras tincidunt ut risus non pharetra. Pellentesque mollis neque mollis metus elementum suscipit. Phasellus dignissim quam in viverra suscipit. Nullam ut aliquet lorem. Suspendisse potenti. Cras id tristique lorem, nec commodo quam. Duis vitae ullamcorper mauris. Sed dictum, metus eget faucibus aliquet, ante lectus tincidunt risus, tristique congue lectus urna scelerisque purus. Nunc vel velit convallis, mattis sem vel, efficitur mauris. Mauris vitae nunc vitae nunc mattis dapibus. tristique lorem quis porttitor. Etiam vel velit sit amet nisi laoreet varius lacinia a metus. Ut rutrum nunc sit amet fermentum malesuada. Cras tincidunt ut risus non pharetra. Pellentesque mollis neque mollis metus elementum suscipit. Phasellus dignissim quam in viverra suscipit. Nullam ut aliquet lorem. Suspendisse potenti. Cras id tristique lorem, nec commodo quam. Duis vitae ullamcorper mauris. Sed dictum, metus eget faucibus aliquet, ante lectus tincidunt risus, tristique congue lectus urna scelerisque purus. Nunc vel velit convallis, mattis sem vel, efficitur mauris. Mauris vitae nunc vitae nunc mattis dapibus.",
+      "comments": [
+        {
+          "channel": {
+            "channelId": 1,
+            "channelName": "Michael"
+          },
+          "content": "Sed dictum, metus eget faucibus aliq",
+          "likes": 15,
+          "dislikes": 7,
+          "date": "Feb 03 2023 18:42:04 GMT+0100 (Central European Standard Time)",
+          "isEdited": true,
+          "responses": [
+            {
+              "channel": {
+                "channelId": 4,
+                "channelName": "Darnell"
+              },
+              "content": "dignissim quam in viverra suscipit",
+              "likes": 3,
+              "dislikes": 0,
+              "date": "Feb 03 2023 21:42:04 GMT+0100 (Central European Standard Time)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Video 2",
+      "channel": {
+        "channelId": 2,
+        "channelName": "Jim"
+      },
+      "src": "/videos/video-2.mp4",
+      "thumbnail": "/images/img-2.jpg",
+      "reaction": "like",
+      "date": "Feb 02 2023 18:42:04 GMT+0100 (Central European Standard Time)",
+      "description": "Nulla facilisi. Nullam mauris elit, maximus eu venenatis ut, consequat at velit. Nulla viverra suscipit massa, non vehicula dui placerat ornare. Phasellus vulputate quam quam, nec mollis mauris imperdiet porta. Duis quam turpis, imperdiet vel ultrices vitae, dignissim non lectus. Vestibulum auctor, tellus id rhoncus volutpat, dolor dui tincidunt risus, rhoncus aliquet dolor lacus in libero. Maecenas pharetra quis diam eu gravida. Proin dui massa, varius quis volutpat vitae, ornare nec diam. Donec risus enim, blandit in sem vitae, placerat dignissim justo. Proin et mattis tellus. Nunc quis nisl magna. Ut non porta massa. Fusce pulvinar erat non sapien accumsan maximus. Nullam aliquam tristique lorem quis porttitor. Etiam vel velit sit amet nisi laoreet varius lacinia a metus. Ut rutrum nunc sit amet fermentum malesuada. Cras tincidunt ut risus non pharetra. Pellentesque mollis neque mollis metus elementum suscipit. Phasellus dignissim quam in viverra suscipit. Nullam ut aliquet lorem. Suspendisse potenti. Cras id tristique lorem, nec commodo quam. Duis vitae ullamcorper mauris. Sed dictum, metus eget faucibus aliquet, ante lectus tincidunt risus, tristique congue lectus urna scelerisque purus. Nunc vel velit convallis, mattis sem vel, efficitur mauris. Mauris vitae nunc vitae nunc mattis dapibus.",
+      "comments": [
+        {
+          "channel": {
+            "channelId": 1,
+            "channelName": "Michael"
+          },
+          "content": "Nullam aliquam tristique lorem quis porttitor",
+          "likes": 15,
+          "dislikes": 7,
+          "date": "Feb 03 2023 18:42:04 GMT+0100 (Central European Standard Time)",
+          "isEdited": true,
+          "responses": [
+            {
+              "channel": {
+                "channelId": 4,
+                "channelName": "Darnell"
+              },
+              "content": "dignissim quam in viverra suscipit",
+              "likes": 3,
+              "dislikes": 0,
+              "date": "Feb 03 2023 21:42:04 GMT+0100 (Central European Standard Time)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Video 3",
+      "channel": {
+        "channelId": 3,
+        "channelName": "Dwight"
+      },
+      "src": "/videos/video-3.mp4",
+      "thumbnail": "/images/img-3.jpg",
+      "date": "Mar 31 2015 18:48:04 GMT+0100 (Central European Standard Time)",
+      "reaction": "dislike",
+      "description": "Sed rutrum metus in libero tincidunt, et ultricies ante varius. Nunc eu elementum enim. Sed consectetur erat feugiat laoreet congue. Nulla porta justo sit amet nisi ornare laoreet. Integer convallis leo ac nulla luctus fermentum. Sed eget ornare ex. Cras egestas metus sed imperdiet suscipit. Donec eget dapibus elit. In massa arcu, sodales tristique imperdiet a, porta vel elit. Nulla id ullamcorper nisi. Aenean viverra sed velit ac ultricies. Sed et faucibus felis, quis pulvinar libero. Donec id lectus eleifend sem semper rutrum. Nunc molestie accumsan dui. Donec sit amet sagittis quam. Mauris ultrices, lectus nec consectetur egestas, felis ligula faucibus neque, a consectetur ipsum ante id tortor.",
+      "comments": [
+        {
+          "channel": {
+            "channelId": 3,
+            "channelName": "Dwight"
+          },
+          "content": "imperdiet suscipit. Donec eget dapibus eli",
+          "likes": 45,
+          "dislikes": 14,
+          "date": "Apr 01 2015 18:02:04 GMT+0100 (Central European Standard Time)",
+          "isEdited": true,
+          "responses": [
+            {
+              "channel": {
+                "channelId": 2,
+                "channelName": "Jim"
+              },
+              "content": "s elit. In massa arcu, so",
+              "likes": 2,
+              "dislikes": 7,
+              "date": "Apr 01 2015 19:02:04 GMT+0100 (Central European Standard Time)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Video 4",
+      "channel": {
+        "channelId": 4,
+        "channelName": "Darnell"
+      },
+      "src": "/videos/video-4.mp4",
+      "thumbnail": "/images/img-4.jpg",
+      "date": "Apr 16 2006 18:48:04 GMT+0100 (Central European Standard Time)",
+      "reaction": null,
+      "description": "Fusce risus leo, tristique sed mi a, malesuada euismod ex. Maecenas ut bibendum urna, non mollis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla laoreet nisi non tellus pellentesque hendrerit vitae sodales justo. Vestibulum malesuada dolor lorem, nec volutpat lorem luctus id. Aliquam erat volutpat. Donec faucibus maximus nisl, eu maximus libero aliquam ut. Pellentesque vitae ligula rhoncus, faucibus nibh id, mollis massa. Pellentesque tempus hendrerit elit, quis dignissim tortor rutrum ac. Vivamus sit amet dui quam. Quisque vitae elit at tellus varius bibendum. Sed dignissim, massa sed blandit lobortis, sem odio dapibus ex, at lacinia elit dui ornare mauris. Etiam id dapibus risus, sit amet volutpat massa. Integer id urna eget diam commodo viverra. Suspendisse vel ornare sapien. Nam efficitur, nisl pellentesque scelerisque faucibus, elit arcu molestie odio, ut iaculis dui velit ut tortor. Praesent dictum pulvinar scelerisque. Sed eleifend mattis consectetur. In ac tempus massa. Vivamus a semper arcu, vitae pellentesque nisi. Suspendisse ut risus tincidunt risus sagittis facilisis eget id odio. Nulla consequat arcu quis ipsum convallis, quis eleifend lectus faucibus. Cras sit amet imperdiet lectus. Vestibulum ultrices, lacus at egestas commodo, ipsum ex faucibus augue, vitae tempus purus nunc et ipsum. Nam commodo volutpat leo, vitae tincidunt lacus vulputate eu.",
+      "comments": [
+        {
+          "channel": {
+            "channelId": 1,
+            "channelName": "Michael"
+          },
+          "content": "Quisque vitae elit at tellus varius bibendum",
+          "likes": 22,
+          "dislikes": 2,
+          "date": "Apr 16 2006 18:58:04 GMT+0100 (Central European Standard Time)",
+          "isEdited": false,
+          "responses": [
+            {
+              "channel": {
+                "channelId": 3,
+                "channelName": "Dwight"
+              },
+              "content": "Nam commodo volutpat leo, vitae tincidunt",
+              "likes": 0,
+              "dislikes": 0,
+              "date": "Apr 17 2006 12:58:04 GMT+0100 (Central European Standard Time)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "id": 1,
+      "name": "Michael",
+      "subscribers": 15000,
+      "videos": [1]
+    },
+    {
+      "id": 2,
+      "name": "Jim",
+      "subscribers": 25000,
+      "videos": [2]
+    },
+    {
+      "id": 3,
+      "name": "Dwight",
+      "subscribers": 35000,
+      "videos": [3]
+    },
+    {
+      "id": 4,
+      "name": "Darnell",
+      "subscribers": 45000,
+      "videos": [4]
+    }
+  ]
+}

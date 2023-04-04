@@ -1,0 +1,327 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .row:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .number-of-comments {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+    }
+  }
+
+  .add-comment-container,
+  .comment-respond-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      background-color: rgb(3, 69, 5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-weight: 700;
+      font-size: 22px;
+      border-radius: 50%;
+    }
+
+    .add-comment-form,
+    .comment-respond-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .add-comment-input,
+      .comment-respond-input {
+        resize: none;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $white;
+        height: auto;
+        padding-bottom: 5px;
+        transition: all 0.2s ease-in;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        &:focus {
+          border-bottom: 1px solid rgb(255, 255, 255);
+        }
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-self: flex-end;
+      }
+
+      .submit-btn,
+      .cancel-btn {
+        align-self: flex-end;
+        margin-top: 5px;
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        color: #141414;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        gap: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        background-color: #3ea6ff;
+        height: 36px;
+        border-radius: 20px;
+        padding: 0 15px;
+
+        &:disabled {
+          background-color: $dark-gray;
+          cursor: not-allowed;
+          color: #717171;
+        }
+      }
+
+      .submit-btn:active {
+        animation: hithere 1s ease 1;
+      }
+
+      .cancel-btn {
+        background-color: transparent !important;
+        color: #fff;
+      }
+      .cancel-btn:hover {
+        background-color: $dark-gray !important;
+        color: #fff;
+      }
+
+      @keyframes hithere {
+        30% {
+          transform: scale(1.2);
+        }
+        40%,
+        60% {
+          transform: rotate(-30deg) scale(1.2);
+        }
+        50% {
+          transform: rotate(30deg) scale(1.2);
+        }
+        70% {
+          transform: rotate(0deg) scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .comments-list {
+    display: flex;
+    flex-direction: column;
+
+    .comment-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      .channel-avatar {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(249, 2, 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        border-radius: 50%;
+      }
+
+      .comment-item-inner {
+        width: 100%;
+
+        .comment {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          .comment-details {
+            .row {
+              margin: 0;
+              gap: 5px;
+
+              .channel-name {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                color: $white;
+              }
+              .date,
+              .is-edited {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #aaa;
+              }
+            }
+
+            .comment-content {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: $white;
+              margin-top: 5px;
+            }
+          }
+
+          .edit-comment-btn {
+            justify-self: flex-end;
+            align-self: start;
+            visibility: hidden;
+            pointer-events: none;
+            opacity: 0;
+            transition: all 0.2s ease-in;
+
+            svg {
+              color: #fff;
+            }
+          }
+
+          &:hover .edit-comment-btn {
+            visibility: visible;
+            pointer-events: initial;
+            opacity: 1;
+          }
+        }
+        .comment-cta {
+          display: flex;
+          gap: 15px;
+          margin-top: 10px;
+
+          button {
+            display: flex;
+            align-items: center;
+            color: #aaa;
+            gap: 5px;
+            font-size: 12px;
+            line-height: 18px;
+
+            svg {
+              font-size: 20px;
+              color: $white;
+            }
+          }
+
+          .respond-to-comment-btn {
+            font-weight: 600;
+            line-height: 32px;
+            color: $white;
+          }
+        }
+        .toggle-comment-responses-btn {
+          color: #3ea6ff;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-weight: 500;
+
+          font-size: 14px;
+          line-height: 36px;
+          transition: all 0.2s ease-in;
+          border: none;
+          outline: none;
+          background: transparent;
+          padding: 0 16px 0 8px;
+          border-radius: 18px;
+
+          &:hover {
+            background-color: #263850;
+          }
+
+          svg {
+            font-size: 26px;
+          }
+        }
+        .comment-responses {
+          @extend .comments-list;
+
+          .comment-response {
+            @extend .comment-item;
+
+            .response-details {
+              @extend .comment-details;
+
+              .row {
+                margin: 0;
+                gap: 5px;
+
+                .channel-name {
+                  font-size: 13px;
+                  font-weight: 500;
+                  line-height: 18px;
+                  color: $white;
+                }
+                .date,
+                .is-edited {
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 18px;
+                  color: #aaa;
+                }
+              }
+
+              .response-content {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $white;
+                margin-top: 5px;
+              }
+
+              .response-cta {
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+
+                button {
+                  display: flex;
+                  align-items: center;
+                  color: #aaa;
+                  gap: 5px;
+                  font-size: 12px;
+                  line-height: 18px;
+
+                  svg {
+                    font-size: 20px;
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
